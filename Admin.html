@@ -30,7 +30,7 @@
 				<nav class="nav2">
 				<div class="search_box" id="search">
 					<div id="search">
-						<input type="text" name="q" size="60" onkeyup="myFunction()" placeholder="Search..." />
+						<input id='myInput' onkeyup='searchTable()' type='text'>
 					</div>
 				</nav>
 			</header>
@@ -273,14 +273,28 @@
 				</div>
 			</footer>
 			<script>
-			  let remove = document.getElementsByClassName('btn');
-			  for(i = 0; i < remove.length; i++){
-			  	  let button = remove[i];
-			  	  button.addEventListener('click', event => {
-			  	  	let buttonClicked = event.target
-			  	  	buttonClicked.parentElement.parentElement.parentElement.parentElement.parentElement.remove()
-			  	  })
-			  };
+			  function searchTable() {
+    var input, filter, found, section, div, div, div, span, i, j;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    section = document.getElementByClassName("car");
+    div = table.getElementsByTagName("div");
+    span = table.getElementsByTagName("span");
+    for (i = 0; i < span.length; i++) {
+        td = span[i].getElementsByTagName("span");
+        for (j = 0; j < td.length; j++) {
+            if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                found = true;
+            }
+        }
+        if (found) {
+            span[i].style.display = "";
+            found = false;
+        } else {
+           span[i].style .display = "none";
+        }
+    }
+}
 			  
 			</script>			
 	</body>
