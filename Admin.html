@@ -273,29 +273,18 @@
 				</div>
 			</footer>
 			<script>
-			  function searchTable() {
-    var input, filter, found, section, div, div, div, span, i, j;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    section = document.getElementByClassName("car");
-    div = table.getElementsByTagName("div");
-    span = table.getElementsByTagName("span");
-    for (i = 0; i < span.length; i++) {
-        td = span[i].getElementsByTagName("span");
-        for (j = 0; j < td.length; j++) {
-            if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
-                found = true;
-            }
-        }
-        if (found) {
-            span[i].style.display = "";
-            found = false;
-        } else {
-           span[i].style .display = "none";
-        }
-    }
+			  let removeCartItem = document.getElementsByClassName('btn');			 
+   				for(let i = 0; i < removeCartItem.length; i++){
+   					
+   					let button = removeCartItem[i];
+   					button.addEventListener('click', (event) => {
+   					      let buttonClicked = event.target
+                          buttonClicked.parentElement.parentElement.parentElement.parentElement.remove()
+                          
+   					}) 
+   					
 }
 			  
-			</script>			
+			</script>				
 	</body>
 </html>
