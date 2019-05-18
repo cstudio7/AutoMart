@@ -7,7 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="dir2/main.css"  />
+		<link rel="stylesheet" href="dir2/styles.css" />
+		<script src="dir1/Store1.js" async></script>
 	</head>
 	<body class="is-preload">
 
@@ -16,7 +18,7 @@
 				<a class="logo" href="index.html">AutoMart</a>
 				<nav>
 					<ul class="menu">
-						<li><a href="#">Home</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li><a href="Upload.html">Upload</a></li>
 						<li><a href="Buy.html">Buy</a></li>
 						<li><a href="sign-in.html">Sign in</a></li>
@@ -24,17 +26,18 @@
 				</nav>
 			</header>
 
-		<!-- Banner -->
-			<section id="banner">
-				<div class="color-overlay"></div>
-				<div class="inner">
-					<h1>AutoMart AutoMobile</h1>
-					<p>We Offer <i>Only the best</i> AutoMobile.</p>
-				</div>
-			
-			</section>
+			<header>
+				<nav class="nav2">
+				<div class="search_box" id="search">
+					<div id="search">
+						<input type="text" name="q" size="60" onkeyup="myFunction()" placeholder="Search..." />
+					</div>
+				</nav>
+			</header>
 
-		<section class="wrapper">
+
+		<!-- Highlights -->
+			<section class="wrapper">
 				<div class="inner">
 					<header class="special">	 
 					<h2><br>Our Products</h2>
@@ -63,7 +66,7 @@
 								<div class="content">
 								  <div class="gallery">
 							        <div class="shop-item">
-                                        <span class="shop-item-title"> Lexus</span>
+                                        <span class="shop-item-title"> Lano 2015</span>
                                         <img class="shop-item-image" src="img/car2.jpg">
                                          <div class="shop-item-details">
                                         <span class="shop-item-price">$14.99</span>
@@ -78,7 +81,7 @@
 								<div class="content">
 								  <div class="gallery">
 							        <div class="shop-item">
-                                        <span class="shop-item-title"> Lexus</span>
+                                        <span class="shop-item-title"> BlueBird</span>
                                         <img class="shop-item-image" src="img/car3.jpg">
                                          <div class="shop-item-details">
                                         <span class="shop-item-price">$14.99</span>
@@ -93,7 +96,7 @@
 								<div class="content">
 								  <div class="gallery">
 							        <div class="shop-item">
-                                        <span class="shop-item-title"> Lexus</span>
+                                        <span class="shop-item-title"> Suv</span>
                                         <img class="shop-item-image" src="img/car4.jpg">
                                          <div class="shop-item-details">
                                         <span class="shop-item-price">$14.99</span>
@@ -108,7 +111,7 @@
 								<div class="content">
 								  <div class="gallery">
 							        <div class="shop-item">
-                                        <span class="shop-item-title"> Lexus</span>
+                                        <span class="shop-item-title"> End of Discussion </span>
                                         <img class="shop-item-image" src="img/car5.jpg">
                                          <div class="shop-item-details">
                                         <span class="shop-item-price">$14.99</span>
@@ -123,8 +126,8 @@
 								<div class="content">
 								  <div class="gallery">
 							        <div class="shop-item">
-                                        <span class="shop-item-title"> Lexus</span>
-                                        <img class="shop-item-image" src="img/car5.jpg">
+                                        <span class="shop-item-title"> Discussion Continues</span>
+                                        <img class="shop-item-image" src="img/car6.jpg">
                                          <div class="shop-item-details">
                                         <span class="shop-item-price">$14.99</span>
                                  <button class="btn6"type="button">ADD TO CART</button>
@@ -134,100 +137,43 @@
                             </div>
 					    </section>
 
-					    <section>
-								<div class="content">
-								  <div class="gallery">
-							        <div class="shop-item">
-                                        <span class="shop-item-title"> Toyota</span>
-                                        <img class="shop-item-image" src="img/car6.jpg">
-                                         <div class="shop-item-details">
-                                        <span class="shop-item-price">$12.99</span>
-                                 <button class="btn7"type="button">ADD TO CART</button>
-                                 </div>
-                               </div>
-                              </div>
-                            </div>
-					    </section>
+					    
 
-					    <section>
-								<div class="content">
-								  <div class="gallery">
-							        <div class="shop-item">
-                                        <span class="shop-item-title"> Nissan</span>
-                                        <img class="shop-item-image" src="img/car7.jpg">
-                                         <div class="shop-item-details">
-                                        <span class="shop-item-price">$14.99</span>
-                                 <button class="btn8"type="button">ADD TO CART</button>
-                                 </div>
-                               </div>
-                              </div>
-                            </div>
 					    </section>										
 					</div>
 				</div>
 			</section>
 
-			
+			<section class="container content-section">
 
-		<!-- CTA -->
-			<section id="cta" class="wrapper">
-				<div class="inner">
-					<h2>Our Vision</h2>
-					<p>AutoMart AutoMobile are professional dealers in AutoMobile, we do deal legitmatelly on trusted products. Below are reviews from some of our most satisfied clients.<br> <h3>Our Mission</h3> <br> Purchasing Cars at your comfort zone </p>
-				</div>
-			</section>
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
 
-		<!-- Testimonials -->
-			<section class="wrapper">
-				<div class="inner">
-					<header class="special">
-						<h2>Reviews</h2>
-						<p> AutoMart AutoMobile are professional dealers in AutoMobile, we do deal legitmatelly on trusted products. Below are reviews from some of our most satisfied clients.</p>
-					</header>
-					<div class="testimonials">
-						<section>
-							<div class="content">
-								<blockquote>
-									<p>Hey guys, AutoMart AutoMobileis your one stop shop for good, quality and reliable Car and their parts.</p>
-								</blockquote>
-								<div class="author">
-									<div class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</div>
-									<p class="credit">- <strong>Jane Doe</strong> <span>CEO - ABC Inc.</span></p>
-								</div>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<blockquote>
-									<p>Hey guys, AutoMart AutoMobileis your one stop shop for good, quality and reliable Car and their parts.</p>
-								</blockquote>
-								<div class="author">
-									<div class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</div>
-									<p class="credit">- <strong>John Doe</strong> <span>CEO - ABC Inc.</span></p>
-								</div>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<blockquote>
-									<p>Hey guys, AutoMart AutoMobileis your one stop shop for good, quality and reliable Car and their parts.</p>
-								</blockquote>
-								<div class="author">
-									<div class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</div>
-									<p class="credit">- <strong>Janet Smith</strong> <span>CEO - ABC Inc.</span></p>
-								</div>
-							</div>
-						</section>
-					</div>
-				</div>
-			</section>
+               
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+						<button class="btn btn-primary btn-purchase msgbox" type="button">Comment</button>
+						<span class="txt1">
+							Click to see All
+						</span>
 
+						<a class="txt2" href="search.html">
+							Click
+						</a>
+
+					
+							
+							
+        </section>
+		
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
@@ -259,6 +205,9 @@
 						&copy; AutoMart Photos <a href="Gallery.html">Gallery</a>, 2019
 					</div>
 				</div>
-			</footer>			
+			</footer>	
+
+
+     
 	</body>
 </html>
