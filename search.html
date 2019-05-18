@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>AutoMart Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">AutoMart</a>
+				<nav>
+					 
+				 </div>
+					<ul class="menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="Buy.html">Buy</a></li>
+						<li><a href="#">Sign in</a></li>
+					</ul>
+				</nav>
+				
+			</header>
+			<header>
+				<nav class="nav2">
+				<div class="search_box" id="search">
+					<div id="search">
+						<header>
+				<nav class="nav2">
+				<div class="search_box" id="search">
+					<div id="search">
+
+<input id='myInput' onkeyup='searchTable()' type='text' placeholder="Search...">
+
+
+
+<table id='myTable'>
+   <tr><td>Toyota Camry &nbsp<input type="button" name="" value="sold"></td> </tr>
+   <tr><td>Nissan &nbsp<input type="button" name="" value="Available"></td> </tr>
+   <tr><td>Jeep wrangler &nbsp<input type="button" name="" value="sold"></td> </tr>
+   <tr><td>Honda Civic &nbsp<input type="button" name="" value="sold"></td> </tr>
+   <tr><td>Ford Focus &nbsp<input type="button" name="" value="Available"></td> </tr>
+   <tr><td>Ford compact Suv &nbsp<input type="button" name="" value="sold"></td> </tr>
+   <tr><td>2014 Infiniti QX60 &nbsp<input type="button" name="" value="sold"></td> </tr>
+   <tr><td>2015 Lexus &nbsp<input type="button" name="" value="Available"></td> </tr>
+   <tr><td>2016 Toyota Highlander &nbsp<input type="button" name="" value="sold"></td> </tr>
+   <tr><td>BMW 328 &nbsp<input type="button" name="" value="sold"></td> </tr>
+   <tr><td>Chrysler &nbsp<input type="button" name="" value="Available"></td> </tr>
+   <tr><td>BMW compact Suv &nbsp<input type="button" name="" value="sold"></td> </tr>
+ 
+</table>
+
+
+  </section>
+		
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>About Us</h3>
+							<p>AutoMart AutoMobile is one of the fastest growing dealers in Sales of AutoMobiles based in Africa. We deal in online purchase of cars of different Brands and from different and trusted companies.<br> Our Mission/Vision <br> Purchasing Cars at your comfort zone   </p>
+						</section>
+						<section>
+							<h4>Our Offer</h4>
+							<ul class="alt">
+								<li><a href="#">Gallery</a></li>
+								<li><a href="#">Place an Order.</a></li>
+								<li><a href="#">Our Product.</a></li>
+								<li><a href="#">Sign Up.</a></li>
+							</ul>
+						</section>
+						<section>
+							<h4>Social Icons</h4>
+							<ul class="plain">
+								<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+								<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+								<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+								<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						&copy; AutoMart Photos <a href="Gallery.html">Gallery</a>, 2019
+					</div>
+				</div>
+			</footer>
+
+<script>
+function searchTable() {
+    var input, filter, found, table, tr, td, i, j;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        for (j = 0; j < td.length; j++) {
+            if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                found = true;
+            }
+        }
+        if (found) {
+            tr[i].style.display = "";
+            found = false;
+        } else {
+            tr[i].style.display = "none";
+        }
+    }
+}
+</script>
+</body>
+</html>
